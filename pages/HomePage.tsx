@@ -1,12 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import {  View } from 'react-native';
+import InputToolBar from '../components/InputToolBar';
+import MessageContainer from '../components/MessageContainer';
 
-export default function HomePage() {
+
+export default function HomePage(props) {
   return (
     <View>
-        <Text fontWeight="500" color="gray.700">
-            Primeira Página
-        </Text>
+      <MessageContainer></MessageContainer>
+      <InputToolBar></InputToolBar>
     </View>
   );
 }
+
 
